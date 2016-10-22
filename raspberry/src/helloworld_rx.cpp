@@ -16,6 +16,12 @@ static void sigterm (int sig) {
   run = false;
 }
 
+std::string timestr(time_t t) {
+   std::stringstream strm;
+   strm << t;
+   return strm.str();
+}
+
 // Setup for GPIO 22 CE and CE1 CSN with SPI Speed @ 8Mhz
 RF24 radio(RPI_V2_GPIO_P1_15, BCM2835_SPI_CS0, BCM2835_SPI_SPEED_8MHZ);  
 
@@ -78,8 +84,9 @@ int main(int argc, char** argv)
                         std::ostringstream ss;
                         ss << payload.value;
                         std::string value(ss.str());
+                        std::string time = timestr(std::time(nullptr));
 
-		        std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + "}";
+		        std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + ", \"timestamp\":" + time + "}";
    	
 			printf("Sending %s \n", jsonData.c_str());
 
