@@ -4,7 +4,9 @@
 #include <ctime>
 #include <stdio.h>
 #include <time.h>
+#include <string>
 
+#include <sstream>
 #include <librdkafka/rdkafkacpp.h>
 #include <csignal>
 
@@ -25,15 +27,10 @@ const uint16_t this_node = 00;
 // Address of the other node in Octal format (01,021, etc)
 const uint16_t other_node = 01;
 
-const unsigned long interval = 2000; //ms  // How often to send 'hello world to the other unit
-
-unsigned long last_sent;             // When did we last send?
-unsigned long packets_sent;          // How many have we sent already
-
 
 struct payload_t {                  // Structure of our payload
-  unsigned long ms;
-  unsigned long counter;
+  char type[4];
+  float value = 0.00;
 };
 
 int main(int argc, char** argv) 
@@ -77,20 +74,26 @@ int main(int argc, char** argv)
 		 	RF24NetworkHeader header;        
    			payload_t payload;
   			network.read(header,&payload,sizeof(payload));
-			
-			printf("Received payload # %lu at %lu \n",payload.counter,payload.ms);
+                        std::string type(payload.type);
+                        std::ostringstream ss;
+                        ss << payload.value;
+                        std::string value(ss.str());
+
+		        std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + "}";
+   	
+			printf("Sending %s \n", jsonData.c_str());
 
                         RdKafka::ErrorCode resp =
                             producer->produce(topic, partition,
                                RdKafka::Producer::RK_MSG_COPY /* Copy payload */,
-                               &payload.counter, sizeof(payload.counter),
+                               (char*)jsonData.c_str(), jsonData.length(),
                                NULL, NULL);
  
                        if (resp != RdKafka::ERR_NO_ERROR)
                             std::cerr << "% Produce failed: " <<
                             RdKafka::err2str(resp) << std::endl;
                        else
-                           std::cerr << "% Produced message (" << sizeof(payload.counter)  << " bytes)" << std::endl;
+                           std::cerr << "% Produced message (" << jsonData.length()  << " bytes)" << std::endl;
 
                        producer->poll(0);
                  }
