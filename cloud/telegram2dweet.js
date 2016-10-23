@@ -28,17 +28,11 @@ $.runMenu({
     layout: 2,
     'temperatura': () => 
         {  
-          if(dweet.content.type == 'T')
-             $.sendMessage(dweet.content.value)
-          else
-             $.sendMessage("No disponible")
+             $.sendMessage(dweet.content.temperatura)
         }, 
     'humedad': () => 
         {
-          if(dweet.content.type == 'H')
-             $.sendMessage(dweet.content.value)
-          else
-             $.sendMessage("No disponible")
+             $.sendMessage(dweet.content.humedad)
         }
 })
         });
