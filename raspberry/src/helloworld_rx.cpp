@@ -50,7 +50,7 @@ int main(int argc, char** argv)
 	
         // Kafka Setup
         std::string errstr;
-        std::string brokers = "52.19.54.104:9092";
+        std::string brokers = "52.210.38.33:9092";
         std::string topic_str = "test";
         int32_t partition = RdKafka::Topic::PARTITION_UA;
 
@@ -87,6 +87,7 @@ int main(int argc, char** argv)
                         std::string time = timestr(std::time(nullptr));
 
 		        std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + ", \"timestamp\":" + time + "}";
+                        std::string key = "raspberry-casa";
    	
 			printf("Sending %s \n", jsonData.c_str());
 
@@ -94,7 +95,7 @@ int main(int argc, char** argv)
                             producer->produce(topic, partition,
                                RdKafka::Producer::RK_MSG_COPY /* Copy payload */,
                                (char*)jsonData.c_str(), jsonData.length(),
-                               NULL, NULL);
+                               key.c_str(), key.length(), NULL);
  
                        if (resp != RdKafka::ERR_NO_ERROR)
                             std::cerr << "% Produce failed: " <<
