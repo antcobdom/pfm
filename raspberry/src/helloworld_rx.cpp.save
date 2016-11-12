@@ -10,7 +10,9 @@
 #include <librdkafka/rdkafkacpp.h>
 #include <csignal>
 
-#include <jsoncpp/json/value.h>
+#include <jsoncpp/json/json.h>
+
+#include <jsoncpp/json/json.h>
 
 #include <jsoncpp/json/json.h>
 #include <fstream>
@@ -57,12 +59,8 @@ int main(int argc, char** argv)
 	
 	//Carga de fichero de mapeo
 	std::ifstream types_file("types.json",std::ifstream::binary);
-	Json::Value types;
-	types_file >> types;
-	cout<<types;        
-	Json::FastWriter fastWriter;
-	Json::Value myjson;
-
+	//types_file >> types;
+	cout<<types_file;        
 
 	// Kafka Setup
         std::string errstr;
@@ -88,8 +86,6 @@ int main(int argc, char** argv)
            std::cerr << "Failed to create topic: " << errstr << std::endl;
          }
 
-	std::time_t time_0 = time(nullptr);
-
 	while(run)
 	{
 		  network.update();
@@ -102,35 +98,26 @@ int main(int argc, char** argv)
                         std::ostringstream ss;
                         ss << payload.value;
                         std::string value(ss.str());
-                                              	
-			
-			myjson[types[type].asString()]=payload.value;
-			myjson["timestamp"]=timestr(std::time(nullptr));
+                        std::string time = timestr(std::time(nullptr));
 
-			
-			cout<<myjson;
-			printf("Diferencia de tiempo %d \n",(std::time(nullptr))-time_0); 
-		        if ((std::time(nullptr))-time_0>60)
-				{
-					 time_0 = time(nullptr);
-					//std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + ", \"timestamp\":" + time + "}";
-                        		std::string key = "raspberry-casa";
-   					std::string jsonData_0 = fastWriter.write(myjson);
-					std::string jsonData=jsonData_0.substr(0, jsonData_0.size()-1);
-					
-					printf("Sending %s \n", &jsonData);
-	
-        		                RdKafka::ErrorCode resp = producer->produce(topic, partition,RdKafka::Producer::RK_MSG_COPY /* Copy payload */,(char*)jsonData.c_str(), jsonData.length(),key.c_str(), key.length(), NULL);
+		        std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + ", \"timestamp\":" + time + "}";
+                        std::string key = "raspberry-casa";
+   	
+			printf("Sending %s \n", jsonData.c_str());
+
+                        RdKafka::ErrorCode resp =
+                            producer->produce(topic, partition,
+                               RdKafka::Producer::RK_MSG_COPY /* Copy payload */,
+                               (char*)jsonData.c_str(), jsonData.length(),
+                               key.c_str(), key.length(), NULL);
  
-  			                if (resp != RdKafka::ERR_NO_ERROR)
-		                            std::cerr << "% Produce failed: " <<
-                		            RdKafka::err2str(resp) << std::endl;
-                       			else
-                           			std::cout << "% Produced message (" << jsonData.length()  << " bytes)" << std::endl;
+                       if (resp != RdKafka::ERR_NO_ERROR)
+                            std::cerr << "% Produce failed: " <<
+                            RdKafka::err2str(resp) << std::endl;
+                       else
+                           std::cerr << "% Produced message (" << jsonData.length()  << " bytes)" << std::endl;
 
-                       			producer->poll(0);
-					//limpio
-				}
+                       producer->poll(0);
                  }
 		  
 		 delay(2000);
