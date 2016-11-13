@@ -80,7 +80,8 @@
 
 using namespace std;
 
-RF24 radio(RPI_V2_GPIO_P1_15, BCM2835_SPI_CS0, BCM2835_SPI_SPEED_8MHZ);
+
+RF24 radio(RPI_V2_GPIO_P1_37, RPI_V2_GPIO_P1_35, BCM2835_SPI_SPEED_8MHZ);
 
 RF24Network network(radio);
 
@@ -90,19 +91,18 @@ const uint16_t this_node = 01;
 
 
 // Address of the other node
-const uint16_t other_node = 00;
+const uint16_t other_node = 031;
 
 const unsigned long interval = 2000; //ms  // How often to send 'hello world to$
 
 unsigned long last_sent;             // When did we last send?
 unsigned long packets_sent;          // How many have we sent already
 
-unsigned long switch_onoff=0;
+char switch_onoff=0;
 
 struct payload_t {                  // Structure of our payload
-  char sensor[5];
-  char device[5];
-  unsigned long on_off;
+  char sensor;
+  char on_off;
 };
 
  
@@ -225,29 +225,34 @@ void msg_consume(RdKafka::Message* message, void* opaque) {
     
     std::string state  = root.get("STATE", "UTF-8" ).asString();
     
-    std::string device_id  = root.get("DEV", "UTF-8" ).asString();
+    //std::string device_id  = root.get("DEV", "UTF-8" ).asString();
+    std::string str1 ("ON");
     
-    
-    if(state=="ON"){
-    	switch_onoff=1;
+    if(state.compare(str1)==0){
+    	switch_onoff='1';
+	//std::cout<<"Es un cero"<<"\n";
     }else{
-	switch_onoff=0;
+	switch_onoff='0';
     }	
+	
+    payload_t payload = {*sensor_id.c_str(),switch_onoff};
+    //payload.sensor=sensor_id;
+    //payload.sensor[4]=0;
+   //strncpy(payload.device,device_id.c_str(),4);
+    //payload.device[4]=0;
 
-    payload_t payload;
-    strncpy(payload.sensor,sensor_id.c_str(),4);
-    payload.sensor[4]=0;
-    strncpy(payload.device,device_id.c_str(),4);
-    payload.device[4]=0;
+    //payload.on_off = switch_onoff;
 
-    payload.on_off = switch_onoff;
-
-    std::cout <<string(payload.sensor)<< "\n";
-    std::cout <<string(payload.device)<< "\n";
+    std::cout <<payload.sensor<< "\n";
+    //std::cout <<string(payload.device)<< "\n";
     RF24NetworkHeader header(/*to node*/ other_node);
     bool ok  = network.write(header,&payload,sizeof(payload));
-
-   
+    if(ok==0){
+	sleep(3);
+	network.write(header,&payload,sizeof(payload));
+    }
+    std::cout<<"Enviooooo\n";
+    std::cout<<ok<<"\n";
 
 
       /*msg_cnt++;
