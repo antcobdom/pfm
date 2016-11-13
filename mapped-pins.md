@@ -13,8 +13,9 @@ Raspberry Pi Pyshical
 
 ![Raspberry Pi Pyshical](https://cloud.githubusercontent.com/assets/4025771/19619194/53eb3874-9861-11e6-9474-4e80a61b653c.png "Rasperry")
 
-Connections
+Rasperry Pi NRF24 Connections
 
+NRF24-1
 ```
 PIN     NRF24L01    RPI             RPi -P1 Connector
 1       GND         rpi-gnd         (25)
@@ -26,7 +27,7 @@ PIN     NRF24L01    RPI             RPi -P1 Connector
 7       MISO        rpi-miso        (21)
 8       IRQ         Not Connected
 ```
-
+NRF24-2
 ```
 PIN     NRF24L01    RPI             RPi -P1 Connector
 1       GND         rpi-gnd         (39)
@@ -37,4 +38,17 @@ PIN     NRF24L01    RPI             RPi -P1 Connector
 6       MOSI        rpi-mosi        (31)
 7       MISO        rpi-miso        (29)
 8       IRQ         Not Connected
+```
+
+Arduino NRF24 Connections
+```
+PIN     NRF24L01                 Arduino -P1 Connector
+1       GND                       (GND)
+2       VCC                       (3v3)
+3       CE                         (D7)****
+4       CSN                        (D8)
+5       SCK                       (D13)
+6       MOSI                      (D11)
+7       MISO                      (D12)
+8       IRQ                      Not Connected
 ```
