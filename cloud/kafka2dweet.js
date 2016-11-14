@@ -1,6 +1,6 @@
 
 var Kafka = require('no-kafka');
-var consumer = new Kafka.SimpleConsumer({'connectionString': '52.210.38.33:9092'});
+var consumer = new Kafka.SimpleConsumer({'connectionString': 'localhost:9092'});
 var dweetClient = require("node-dweetio");
 var dweetio = new dweetClient();
 var sleep = require('sleep');
