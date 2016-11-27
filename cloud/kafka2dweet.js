@@ -1,6 +1,6 @@
 
 var Kafka = require('no-kafka');
-var consumer = new Kafka.SimpleConsumer({'connectionString': 'localhost:9092'});
+var consumer = new Kafka.SimpleConsumer({'connectionString': '192.168.1.105:9092'});
 var dweetClient = require("node-dweetio");
 var dweetio = new dweetClient();
 var sleep = require('sleep');
@@ -16,6 +16,6 @@ var dataHandler = function (messageSet, topic, partition) {
 
 
 return consumer.init().then(function () {
-    return consumer.subscribe('test', dataHandler);
+    return consumer.subscribe('metrics', dataHandler);
 });
 

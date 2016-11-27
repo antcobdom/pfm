@@ -1,0 +1,7 @@
+{
+  "id": "rule2",
+  "version": 6,
+  "input": ["metrics"],
+  "output": { "outputStream": "actions" },
+  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'B' as SENSOR output every 2 min insert into outputStream;"
+}

@@ -1,0 +1,23 @@
+rest_uri: http://localhost:8888
+state_file: /Users/andresgomezfrr/raspberry/state.json
+sources:
+  - name: kafka
+    class: net.redborder.cep.sources.kafka.KafkaSource
+    properties:
+      zk_connect: localhost:2181
+      kafka_brokers: 192.168.1.105:9092
+sinks:
+  - name: kafka
+    class: net.redborder.cep.sinks.kafka.KafkaSink
+    properties:
+      kafka_brokers: 192.168.1.105:9092
+parsers:
+  json: net.redborder.cep.sources.parsers.JsonParser
+streams:
+  metrics:
+    source: kafka
+    parser: json
+    attributes:
+      timestamp: long
+      temperatura: double
+      humedad: double

@@ -1,0 +1,1288 @@
+2016-11-25 00:20:29 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:20:29 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:20:29 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:20:29 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:20:29 [INFO] Restoring state from file /Users/andresgomezfrr/raspberry/state.json
+2016-11-25 00:20:29 [WARN] Couldn't read the state file
+2016-11-25 00:20:30 [INFO] Starting
+2016-11-25 00:20:30 [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-25 00:20:30 [INFO] Client environment:host.name=192.168.99.1
+2016-11-25 00:20:30 [INFO] Client environment:java.version=1.8.0_92
+2016-11-25 00:20:30 [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-25 00:20:30 [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre
+2016-11-25 00:20:30 [INFO] Client environment:java.class.path=./:cep-0.1.1-SNAPSHOT-selfcontained.jar
+2016-11-25 00:20:30 [INFO] Client environment:java.library.path=/Users/andresgomezfrr/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-11-25 00:20:30 [INFO] Client environment:java.io.tmpdir=/var/folders/g5/z9wphb216qs94qj17nc2l1yr0000gn/T/
+2016-11-25 00:20:30 [INFO] Client environment:java.compiler=<NA>
+2016-11-25 00:20:30 [INFO] Client environment:os.name=Mac OS X
+2016-11-25 00:20:30 [INFO] Client environment:os.arch=x86_64
+2016-11-25 00:20:30 [INFO] Client environment:os.version=10.12.1
+2016-11-25 00:20:30 [INFO] Client environment:user.name=andresgomezfrr
+2016-11-25 00:20:30 [INFO] Client environment:user.home=/Users/andresgomezfrr
+2016-11-25 00:20:30 [INFO] Client environment:user.dir=/Users/andresgomezfrr/raspberry/pfm/cloud/cep
+2016-11-25 00:20:30 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@121314f7
+2016-11-25 00:20:30 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 00:20:30 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 00:20:30 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f0054, negotiated timeout = 60000
+2016-11-25 00:20:30 [INFO] State change: CONNECTED
+2016-11-25 00:20:31 [INFO] Starting with topics [metrics(1)]
+2016-11-25 00:20:31 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:20:31 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:20:31 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:20:31 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:20:31 [INFO] Discovered coordinator 192.168.99.1:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 00:20:31 [INFO] Revoking previously assigned partitions [] for group rb-cep-engine
+2016-11-25 00:20:31 [INFO] (Re-)joining group rb-cep-engine
+2016-11-25 00:20:31 [INFO] Successfully joined group rb-cep-engine with generation 10
+2016-11-25 00:20:31 [INFO] Setting newly assigned partitions [metrics-0] for group rb-cep-engine
+2016-11-25 00:20:32 [INFO] HTTP server started
+2016-11-25 00:22:22 [INFO] Marking the coordinator 192.168.99.1:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 00:24:46 [INFO] Stopping siddhi plans...
+2016-11-25 00:25:16 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:25:16 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:25:16 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:25:16 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:25:16 [INFO] Restoring state from file /Users/andresgomezfrr/raspberry/state.json
+2016-11-25 00:25:16 [WARN] Couldn't read the state file
+2016-11-25 00:25:16 [INFO] Starting
+2016-11-25 00:25:16 [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-25 00:25:16 [INFO] Client environment:host.name=192.168.1.105
+2016-11-25 00:25:16 [INFO] Client environment:java.version=1.8.0_92
+2016-11-25 00:25:16 [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-25 00:25:16 [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre
+2016-11-25 00:25:16 [INFO] Client environment:java.class.path=./:cep-0.1.1-SNAPSHOT-selfcontained.jar
+2016-11-25 00:25:16 [INFO] Client environment:java.library.path=/Users/andresgomezfrr/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-11-25 00:25:16 [INFO] Client environment:java.io.tmpdir=/var/folders/g5/z9wphb216qs94qj17nc2l1yr0000gn/T/
+2016-11-25 00:25:16 [INFO] Client environment:java.compiler=<NA>
+2016-11-25 00:25:16 [INFO] Client environment:os.name=Mac OS X
+2016-11-25 00:25:16 [INFO] Client environment:os.arch=x86_64
+2016-11-25 00:25:16 [INFO] Client environment:os.version=10.12.1
+2016-11-25 00:25:16 [INFO] Client environment:user.name=andresgomezfrr
+2016-11-25 00:25:16 [INFO] Client environment:user.home=/Users/andresgomezfrr
+2016-11-25 00:25:16 [INFO] Client environment:user.dir=/Users/andresgomezfrr/raspberry/pfm/cloud/cep
+2016-11-25 00:25:16 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@121314f7
+2016-11-25 00:25:17 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 00:25:17 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 00:25:17 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f005b, negotiated timeout = 60000
+2016-11-25 00:25:17 [INFO] State change: CONNECTED
+2016-11-25 00:25:18 [INFO] Starting with topics [metrics(1)]
+2016-11-25 00:25:18 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:25:18 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:25:18 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:25:18 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:25:18 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 00:25:18 [INFO] Revoking previously assigned partitions [] for group rb-cep-engine
+2016-11-25 00:25:18 [INFO] (Re-)joining group rb-cep-engine
+2016-11-25 00:25:18 [INFO] Successfully joined group rb-cep-engine with generation 1
+2016-11-25 00:25:18 [INFO] Setting newly assigned partitions [metrics-0] for group rb-cep-engine
+2016-11-25 00:25:19 [INFO] HTTP server started
+2016-11-25 00:27:52 [INFO] Add request with json: {  "id": "rule1",  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 30] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:27:52 [INFO] Creating stream definition for topic metrics
+2016-11-25 00:27:52 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics [temperatura > 30] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream, id=rule1, filters={}, version=0}
+2016-11-25 00:27:52 [INFO] Started execution plan with id rule1 version 0
+2016-11-25 00:28:57 [INFO] Stopping siddhi plans...
+2016-11-25 00:28:57 [INFO] Stopped execution plan rule1 version 0
+2016-11-25 00:29:14 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:29:14 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:29:14 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:29:14 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:29:14 [INFO] Restoring state from file /Users/andresgomezfrr/raspberry/state.json
+2016-11-25 00:29:14 [INFO] Creating stream definition for topic metrics
+2016-11-25 00:29:14 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics [temperatura > 30] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream, id=rule1, filters={}, version=0}
+2016-11-25 00:29:14 [INFO] Started execution plan with id rule1 version 0
+2016-11-25 00:29:15 [INFO] Starting
+2016-11-25 00:29:15 [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-25 00:29:15 [INFO] Client environment:host.name=192.168.1.105
+2016-11-25 00:29:15 [INFO] Client environment:java.version=1.8.0_92
+2016-11-25 00:29:15 [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-25 00:29:15 [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre
+2016-11-25 00:29:15 [INFO] Client environment:java.class.path=./:cep-0.1.1-SNAPSHOT-selfcontained.jar
+2016-11-25 00:29:15 [INFO] Client environment:java.library.path=/Users/andresgomezfrr/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-11-25 00:29:15 [INFO] Client environment:java.io.tmpdir=/var/folders/g5/z9wphb216qs94qj17nc2l1yr0000gn/T/
+2016-11-25 00:29:15 [INFO] Client environment:java.compiler=<NA>
+2016-11-25 00:29:15 [INFO] Client environment:os.name=Mac OS X
+2016-11-25 00:29:15 [INFO] Client environment:os.arch=x86_64
+2016-11-25 00:29:15 [INFO] Client environment:os.version=10.12.1
+2016-11-25 00:29:15 [INFO] Client environment:user.name=andresgomezfrr
+2016-11-25 00:29:15 [INFO] Client environment:user.home=/Users/andresgomezfrr
+2016-11-25 00:29:15 [INFO] Client environment:user.dir=/Users/andresgomezfrr/raspberry/pfm/cloud/cep
+2016-11-25 00:29:15 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@129b4fe2
+2016-11-25 00:29:15 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 00:29:15 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 00:29:15 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f005c, negotiated timeout = 60000
+2016-11-25 00:29:15 [INFO] State change: CONNECTED
+2016-11-25 00:29:16 [INFO] Starting with topics [metrics(1)]
+2016-11-25 00:29:16 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:29:16 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:29:17 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:29:17 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:29:17 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 00:29:17 [INFO] Revoking previously assigned partitions [] for group rb-cep-engine
+2016-11-25 00:29:17 [INFO] (Re-)joining group rb-cep-engine
+2016-11-25 00:29:17 [INFO] Successfully joined group rb-cep-engine with generation 3
+2016-11-25 00:29:17 [INFO] Setting newly assigned partitions [metrics-0] for group rb-cep-engine
+2016-11-25 00:29:18 [INFO] HTTP server started
+2016-11-25 00:29:18 [INFO] Add request with json: {  "id": "rule1",  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 30] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:29:18 [INFO] Add request was invalid: siddhi plan with id rule1 already exists with an equal or greater version
+2016-11-25 00:30:01 [INFO] Add request with json: {  "id": "rule1",  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 15] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:30:01 [INFO] Add request was invalid: siddhi plan with id rule1 already exists with an equal or greater version
+2016-11-25 00:30:20 [INFO] Add request with json: {  "id": "rule1",  "version": "v2",  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 15] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:30:20 [INFO] Add request was invalid: invalid type for field version
+2016-11-25 00:30:31 [INFO] Add request with json: {  "id": "rule1",  "version": 2,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 15] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:30:31 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics [temperatura > 15] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream, id=rule1, filters={}, version=2}
+2016-11-25 00:30:31 [INFO] Started execution plan with id rule1 version 2
+2016-11-25 00:30:31 [INFO] Stopped execution plan rule1 version 0
+2016-11-25 00:30:35 [INFO] Add request with json: {  "id": "rule1",  "version": 2,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 15] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:30:35 [INFO] Add request was invalid: siddhi plan with id rule1 already exists with an equal or greater version
+2016-11-25 00:32:27 [INFO] Add request with json: {  "id": "rule1",  "version": 3,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:32:27 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics [temperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream, id=rule1, filters={}, version=3}
+2016-11-25 00:32:27 [INFO] Started execution plan with id rule1 version 3
+2016-11-25 00:32:27 [INFO] Stopped execution plan rule1 version 2
+2016-11-25 00:32:43 [INFO] Add request with json: {  "id": "rule2",  "version": 3,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics [temperatura < 22] select 'OFF' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream"}
+2016-11-25 00:32:43 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics [temperatura < 22] select 'OFF' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream, id=rule2, filters={}, version=3}
+2016-11-25 00:32:43 [INFO] Started execution plan with id rule2 version 3
+2016-11-25 00:39:14 [INFO] Add request with json: {  "id": "rule1",  "version": 4,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temp) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;"}
+2016-11-25 00:39:14 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temp) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;, id=rule1, filters={}, version=4}
+2016-11-25 00:39:32 [INFO] Add request with json: {  "id": "rule1",  "version": 4,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(Temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;"}
+2016-11-25 00:39:32 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(Temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;, id=rule1, filters={}, version=4}
+2016-11-25 00:39:48 [INFO] Add request with json: {  "id": "rule1",  "version": 4,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;"}
+2016-11-25 00:39:48 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;, id=rule1, filters={}, version=4}
+2016-11-25 00:39:48 [INFO] Started execution plan with id rule1 version 4
+2016-11-25 00:39:48 [INFO] Stopped execution plan rule1 version 3
+2016-11-25 00:40:20 [INFO] Add request with json: {  "id": "rule2",  "version": 4,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temp) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;"}
+2016-11-25 00:40:20 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temp) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;, id=rule2, filters={}, version=4}
+2016-11-25 00:40:31 [INFO] Add request with json: {  "id": "rule2",  "version": 4,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;"}
+2016-11-25 00:40:31 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR insert into outputStream;, id=rule2, filters={}, version=4}
+2016-11-25 00:40:31 [INFO] Started execution plan with id rule2 version 4
+2016-11-25 00:40:31 [INFO] Stopped execution plan rule2 version 3
+2016-11-25 00:42:29 [INFO] Add request with json: {  "id": "rule2",  "version": 5,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;"}
+2016-11-25 00:42:29 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;, id=rule2, filters={}, version=5}
+2016-11-25 00:42:29 [INFO] Started execution plan with id rule2 version 5
+2016-11-25 00:42:29 [INFO] Stopped execution plan rule2 version 4
+2016-11-25 00:42:50 [INFO] Add request with json: {  "id": "rule1",  "version": 5,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;"}
+2016-11-25 00:42:50 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;, id=rule1, filters={}, version=5}
+2016-11-25 00:42:50 [INFO] Started execution plan with id rule1 version 5
+2016-11-25 00:42:50 [INFO] Stopped execution plan rule1 version 4
+2016-11-25 00:43:45 [INFO] Stopping siddhi plans...
+2016-11-25 00:43:45 [INFO] Stopped execution plan rule1 version 5
+2016-11-25 00:43:45 [INFO] Stopped execution plan rule2 version 5
+2016-11-25 00:43:49 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:43:49 [INFO] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [192.168.1.105:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class net.redborder.cep.sinks.kafka.SimplePartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2016-11-25 00:43:49 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:43:49 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:43:49 [INFO] Restoring state from file /Users/andresgomezfrr/raspberry/state.json
+2016-11-25 00:43:49 [INFO] Creating stream definition for topic metrics
+2016-11-25 00:43:49 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;, id=rule1, filters={}, version=5}
+2016-11-25 00:43:49 [INFO] Started execution plan with id rule1 version 5
+2016-11-25 00:43:50 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'Sensor01' as SENSOR output every 2 min insert into outputStream;, id=rule2, filters={}, version=5}
+2016-11-25 00:43:50 [INFO] Started execution plan with id rule2 version 5
+2016-11-25 00:43:50 [INFO] Starting
+2016-11-25 00:43:50 [INFO] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2016-11-25 00:43:50 [INFO] Client environment:host.name=192.168.99.1
+2016-11-25 00:43:50 [INFO] Client environment:java.version=1.8.0_92
+2016-11-25 00:43:50 [INFO] Client environment:java.vendor=Oracle Corporation
+2016-11-25 00:43:50 [INFO] Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre
+2016-11-25 00:43:50 [INFO] Client environment:java.class.path=./:cep-0.1.1-SNAPSHOT-selfcontained.jar
+2016-11-25 00:43:50 [INFO] Client environment:java.library.path=/Users/andresgomezfrr/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2016-11-25 00:43:50 [INFO] Client environment:java.io.tmpdir=/var/folders/g5/z9wphb216qs94qj17nc2l1yr0000gn/T/
+2016-11-25 00:43:50 [INFO] Client environment:java.compiler=<NA>
+2016-11-25 00:43:50 [INFO] Client environment:os.name=Mac OS X
+2016-11-25 00:43:50 [INFO] Client environment:os.arch=x86_64
+2016-11-25 00:43:50 [INFO] Client environment:os.version=10.12.1
+2016-11-25 00:43:50 [INFO] Client environment:user.name=andresgomezfrr
+2016-11-25 00:43:50 [INFO] Client environment:user.home=/Users/andresgomezfrr
+2016-11-25 00:43:50 [INFO] Client environment:user.dir=/Users/andresgomezfrr/raspberry/pfm/cloud/cep
+2016-11-25 00:43:50 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 00:43:50 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 00:43:50 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 00:43:50 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f005d, negotiated timeout = 60000
+2016-11-25 00:43:50 [INFO] State change: CONNECTED
+2016-11-25 00:43:52 [INFO] Starting with topics [metrics(1)]
+2016-11-25 00:43:52 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:43:52 [INFO] ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = latest
+	bootstrap.servers = [192.168.1.105:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = rb-cep-engine
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2016-11-25 00:43:52 [INFO] Kafka version : 0.10.1.0
+2016-11-25 00:43:52 [INFO] Kafka commitId : 3402a74efb23d1d4
+2016-11-25 00:43:52 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 00:43:52 [INFO] Revoking previously assigned partitions [] for group rb-cep-engine
+2016-11-25 00:43:52 [INFO] (Re-)joining group rb-cep-engine
+2016-11-25 00:43:53 [INFO] HTTP server started
+2016-11-25 00:43:55 [INFO] Successfully joined group rb-cep-engine with generation 4
+2016-11-25 00:43:55 [INFO] Setting newly assigned partitions [metrics-0] for group rb-cep-engine
+2016-11-25 00:44:32 [INFO] Add request with json: {  "id": "rule1",  "version": 6,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'R' as SENSOR output every 2 min insert into outputStream;"}
+2016-11-25 00:44:32 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'Dev01' as DEV, 'R' as SENSOR output every 2 min insert into outputStream;, id=rule1, filters={}, version=6}
+2016-11-25 00:44:32 [INFO] Started execution plan with id rule1 version 6
+2016-11-25 00:44:32 [INFO] Stopped execution plan rule1 version 5
+2016-11-25 00:44:54 [INFO] Add request with json: {  "id": "rule2",  "version": 6,  "input": ["metrics"],  "output": { "outputStream": "actions" },  "executionPlan": "from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'B' as SENSOR output every 2 min insert into outputStream;"}
+2016-11-25 00:44:54 [INFO] Adding new siddhi plan: {output={outputStream=actions}, input=[metrics], executionPlan=from metrics#window.time(1 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura < 22] select 'ON' as STATE, 'Dev01' as DEV, 'B' as SENSOR output every 2 min insert into outputStream;, id=rule2, filters={}, version=6}
+2016-11-25 00:44:54 [INFO] Started execution plan with id rule2 version 6
+2016-11-25 00:44:54 [INFO] Stopped execution plan rule2 version 5
+2016-11-25 02:01:21 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 02:01:21 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 02:01:21 [INFO] Unable to read additional data from server sessionid 0x1586ce2005f005d, likely server has closed socket, closing socket connection and attempting reconnect
+2016-11-25 02:01:21 [INFO] State change: SUSPENDED
+2016-11-25 02:01:21 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 02:01:21 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 02:01:21 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f005d has expired, closing socket connection
+2016-11-25 02:01:36 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (15096)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at net.redborder.cep.sources.kafka.KafkaSource$PartitionsWatcher.process(KafkaSource.java:213) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:67) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+2016-11-25 02:19:23 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 02:19:23 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 02:19:23 [WARN] Connection attempt unsuccessful after 1082329 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 02:19:23 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 02:19:23 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 02:19:25 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 02:19:25 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f005f, negotiated timeout = 60000
+2016-11-25 02:19:25 [INFO] State change: RECONNECTED
+2016-11-25 02:19:25 [INFO] State change: LOST
+2016-11-25 02:19:25 [WARN] Session expired event received
+2016-11-25 02:19:25 [INFO] Session: 0x1586ce2005f005f closed
+2016-11-25 02:19:25 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 02:19:25 [INFO] EventThread shut down
+2016-11-25 02:19:25 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 02:19:25 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 02:19:25 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f0060, negotiated timeout = 60000
+2016-11-25 02:19:25 [INFO] State change: RECONNECTED
+2016-11-25 02:19:25 [INFO] EventThread shut down
+2016-11-25 03:20:10 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 03:20:11 [WARN] Auto offset commit failed for group rb-cep-engine: Offset commit failed with a retriable exception. You should retry committing offsets.
+2016-11-25 03:20:11 [INFO] Unable to read additional data from server sessionid 0x1586ce2005f0060, likely server has closed socket, closing socket connection and attempting reconnect
+2016-11-25 03:20:11 [INFO] State change: SUSPENDED
+2016-11-25 03:20:12 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 03:20:12 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 03:20:12 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f0060 has expired, closing socket connection
+2016-11-25 03:20:12 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 03:20:27 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (15079)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at net.redborder.cep.sources.kafka.KafkaSource$PartitionsWatcher.process(KafkaSource.java:213) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:67) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+2016-11-25 03:21:12 [WARN] Connection attempt unsuccessful after 60178 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 03:21:12 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 03:21:12 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 03:21:12 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 03:21:12 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f0063, negotiated timeout = 60000
+2016-11-25 03:21:12 [INFO] State change: RECONNECTED
+2016-11-25 03:21:12 [INFO] State change: LOST
+2016-11-25 03:21:12 [WARN] Session expired event received
+2016-11-25 03:21:12 [INFO] Session: 0x1586ce2005f0063 closed
+2016-11-25 03:21:12 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 03:21:12 [INFO] EventThread shut down
+2016-11-25 03:21:12 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 03:21:12 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 03:21:12 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f0064, negotiated timeout = 60000
+2016-11-25 03:21:12 [INFO] State change: RECONNECTED
+2016-11-25 03:21:12 [INFO] EventThread shut down
+2016-11-25 05:19:55 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 05:19:55 [WARN] Auto offset commit failed for group rb-cep-engine: Offset commit failed with a retriable exception. You should retry committing offsets.
+2016-11-25 05:19:55 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 05:19:57 [INFO] Unable to read additional data from server sessionid 0x1586ce2005f0064, likely server has closed socket, closing socket connection and attempting reconnect
+2016-11-25 05:19:57 [INFO] State change: SUSPENDED
+2016-11-25 05:19:58 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 05:19:58 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 05:19:58 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f0064 has expired, closing socket connection
+2016-11-25 05:20:12 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (15098)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at net.redborder.cep.sources.kafka.KafkaSource$PartitionsWatcher.process(KafkaSource.java:213) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:67) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+2016-11-25 05:20:18 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (21035)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:806) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:792) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:62) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:257) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_92]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_92]
+2016-11-25 07:20:41 [WARN] Connection attempt unsuccessful after 7243718 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 07:20:41 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 07:20:41 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 07:20:41 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 07:20:44 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 07:20:44 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 07:20:44 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f0065, negotiated timeout = 60000
+2016-11-25 07:20:44 [INFO] State change: RECONNECTED
+2016-11-25 07:20:44 [INFO] State change: LOST
+2016-11-25 07:20:44 [WARN] Session expired event received
+2016-11-25 07:20:44 [INFO] Session: 0x1586ce2005f0065 closed
+2016-11-25 07:20:44 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 07:20:44 [INFO] EventThread shut down
+2016-11-25 07:20:44 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 07:20:44 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 07:20:44 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f0066, negotiated timeout = 60000
+2016-11-25 07:20:44 [INFO] State change: RECONNECTED
+2016-11-25 07:20:44 [INFO] EventThread shut down
+2016-11-25 07:59:17 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 07:59:17 [INFO] Client session timed out, have not heard from server in 2283277ms for sessionid 0x1586ce2005f0066, closing socket connection and attempting reconnect
+2016-11-25 07:59:18 [WARN] Auto offset commit failed for group rb-cep-engine: Offset commit failed with a retriable exception. You should retry committing offsets.
+2016-11-25 07:59:18 [INFO] State change: SUSPENDED
+2016-11-25 07:59:19 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 07:59:19 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 07:59:19 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f0066 has expired, closing socket connection
+2016-11-25 07:59:19 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 07:59:33 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (15090)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at net.redborder.cep.sources.kafka.KafkaSource$PartitionsWatcher.process(KafkaSource.java:213) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:67) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+2016-11-25 08:10:46 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 08:10:46 [WARN] Auto offset commit failed for group rb-cep-engine: Offset commit failed with a retriable exception. You should retry committing offsets.
+2016-11-25 08:10:49 [INFO] Discovered coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) for group rb-cep-engine.
+2016-11-25 08:10:59 [INFO] Marking the coordinator 192.168.1.105:9092 (id: 2147483647 rack: null) dead for group rb-cep-engine
+2016-11-25 08:11:30 [WARN] Connection attempt unsuccessful after 731647 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 08:11:30 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 08:11:30 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 08:11:30 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 08:11:30 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f006a, negotiated timeout = 60000
+2016-11-25 08:11:30 [INFO] State change: RECONNECTED
+2016-11-25 08:11:30 [INFO] State change: LOST
+2016-11-25 08:11:30 [WARN] Session expired event received
+2016-11-25 08:11:30 [INFO] Session: 0x1586ce2005f006a closed
+2016-11-25 08:11:30 [INFO] EventThread shut down
+2016-11-25 08:11:30 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 08:11:30 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 08:11:30 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 08:11:30 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f006b, negotiated timeout = 60000
+2016-11-25 08:11:30 [INFO] State change: RECONNECTED
+2016-11-25 08:11:30 [INFO] EventThread shut down
+2016-11-25 09:33:52 [INFO] Client session timed out, have not heard from server in 550322ms for sessionid 0x1586ce2005f006b, closing socket connection and attempting reconnect
+2016-11-25 09:33:53 [INFO] State change: SUSPENDED
+2016-11-25 09:33:53 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 09:33:53 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 09:33:53 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f006b has expired, closing socket connection
+2016-11-25 09:34:08 [ERROR] Connection timed out for connection string (localhost:2181) and timeout (15000) / elapsed (15101)
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.ConnectionState.checkTimeouts(ConnectionState.java:197) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.ConnectionState.getZooKeeper(ConnectionState.java:87) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.CuratorZookeeperClient.getZooKeeper(CuratorZookeeperClient.java:115) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.getZooKeeper(CuratorFrameworkImpl.java:477) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:214) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$3.call(GetChildrenBuilderImpl.java:203) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:107) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.pathInForeground(GetChildrenBuilderImpl.java:200) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:191) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl.forPath(GetChildrenBuilderImpl.java:38) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at net.redborder.cep.sources.kafka.KafkaSource$PartitionsWatcher.process(KafkaSource.java:213) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.curator.framework.imps.NamespaceWatcher.process(NamespaceWatcher.java:67) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498) [cep-0.1.1-SNAPSHOT-selfcontained.jar:?]
+2016-11-25 09:34:53 [WARN] Connection attempt unsuccessful after 60188 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 09:34:53 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 09:34:53 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 09:34:53 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 09:34:53 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f006d, negotiated timeout = 60000
+2016-11-25 09:34:53 [INFO] State change: RECONNECTED
+2016-11-25 09:34:53 [INFO] State change: LOST
+2016-11-25 09:34:53 [WARN] Session expired event received
+2016-11-25 09:34:53 [INFO] Session: 0x1586ce2005f006d closed
+2016-11-25 09:34:53 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 09:34:53 [INFO] EventThread shut down
+2016-11-25 09:34:53 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 09:34:53 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 09:34:53 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f006e, negotiated timeout = 60000
+2016-11-25 09:34:53 [INFO] State change: RECONNECTED
+2016-11-25 09:34:53 [INFO] EventThread shut down
+2016-11-25 12:31:43 [INFO] Unable to read additional data from server sessionid 0x1586ce2005f006e, likely server has closed socket, closing socket connection and attempting reconnect
+2016-11-25 12:31:43 [INFO] State change: SUSPENDED
+2016-11-25 12:31:43 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 12:31:43 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 12:31:43 [INFO] Unable to reconnect to ZooKeeper service, session 0x1586ce2005f006e has expired, closing socket connection
+2016-11-25 16:30:48 [WARN] Connection attempt unsuccessful after 14344191 (greater than max timeout of 60000). Resetting connection and trying again with a new connection.
+2016-11-25 16:30:48 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 16:30:57 [INFO] Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 16:30:57 [INFO] Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session
+2016-11-25 16:30:57 [INFO] Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x1586ce2005f0071, negotiated timeout = 60000
+2016-11-25 16:30:57 [INFO] State change: RECONNECTED
+2016-11-25 16:30:57 [INFO] State change: LOST
+2016-11-25 16:30:57 [WARN] Session expired event received
+2016-11-25 16:30:57 [INFO] EventThread shut down
+2016-11-25 16:30:57 [INFO] Session: 0x1586ce2005f0071 closed
+2016-11-25 16:30:57 [INFO] Initiating client connection, connectString=localhost:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b64c4b7
+2016-11-25 16:30:57 [INFO] Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-25 16:30:57 [INFO] Socket connection established to localhost/127.0.0.1:2181, initiating session
+2016-11-25 16:30:57 [INFO] Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x1586ce2005f0072, negotiated timeout = 60000
+2016-11-25 16:30:57 [INFO] State change: RECONNECTED
+2016-11-25 16:30:57 [INFO] EventThread shut down

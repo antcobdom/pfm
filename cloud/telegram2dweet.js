@@ -38,6 +38,10 @@ class QueryController extends TelegramBaseController {
                   'humedad': () =>
                       {
                            $.sendMessage(dweet.content.humedad)
+                      },
+                  'lluvia': () =>
+                      {
+                           $.sendMessage(dweet.content.lluvia)
                       }
               })
             } else {
@@ -101,7 +105,7 @@ class LedController extends TelegramBaseController {
     ledHandler($) {
       $.runForm(form, (result) => {
           var data = {DEV: result.dev, SENSOR: result.sensor, STATE: result.status}
-          var payload = [{ topic: 'topic1', messages: JSON.stringify(data) }];
+          var payload = [{ topic: 'actions', messages: JSON.stringify(data) }];
           producer.send(payload, function (err, data) {
               if(err != null) {
                 $.sendMessage("Your request wasn't processed correctly :(");
