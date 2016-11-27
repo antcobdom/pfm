@@ -31,15 +31,15 @@ class QueryController extends TelegramBaseController {
                       parse_mode: 'Markdown'
                   },
                   layout: 2,
-                  'temperatura': () =>
+                  'Temperature': () =>
                       {
                            $.sendMessage(dweet.content.temperatura)
                       },
-                  'humedad': () =>
+                  'Humidity': () =>
                       {
                            $.sendMessage(dweet.content.humedad)
                       },
-                  'lluvia': () =>
+                  'Rain': () =>
                       {
                            $.sendMessage(dweet.content.lluvia)
                       }
