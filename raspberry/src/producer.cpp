@@ -66,7 +66,7 @@ int main(int argc, char** argv)
 
 	// Kafka Setup
         std::string errstr;
-        std::string brokers = "52.210.38.33:9092";
+        std::string brokers = "192.168.1.105:9092";
         std::string topic_str = "test";
         int32_t partition = RdKafka::Topic::PARTITION_UA;
 
@@ -110,7 +110,7 @@ int main(int argc, char** argv)
 			
 			cout<<myjson;
 			printf("Diferencia de tiempo %d \n",(std::time(nullptr))-time_0); 
-		        if ((std::time(nullptr))-time_0>60)
+		        if ((std::time(nullptr))-time_0>3)
 				{
 					 time_0 = time(nullptr);
 					//std::string jsonData = "{\"type\":\"" + type  + "\", \"value\":" + value + ", \"timestamp\":" + time + "}";

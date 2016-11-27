@@ -81,7 +81,7 @@
 using namespace std;
 
 
-RF24 radio(RPI_V2_GPIO_P1_37, RPI_V2_GPIO_P1_35, BCM2835_SPI_SPEED_8MHZ);
+RF24 radio(RPI_V2_GPIO_P1_15, RPI_V2_GPIO_P1_24, BCM2835_SPI_SPEED_8MHZ);
 
 RF24Network network(radio);
 
