@@ -25,7 +25,7 @@ class QueryController extends TelegramBaseController {
               console.log(dweet.content); // The content of the dweet
               console.log(dweet.created); // The create date of the dweet
               $.runMenu({
-                  message: "Selecciona la medida a mostar!",
+                  message: "Select measure to show!",
                   oneTimeKeyboard: true,
                   options: {
                       parse_mode: 'Markdown'
@@ -128,4 +128,4 @@ class LedController extends TelegramBaseController {
 
 tg.router
   .when(new TextCommand('/query', 'QueryCommand'), new QueryController())
-  .when(new TextCommand('/led', 'LedCommand'),   new LedController())
+  .when(new TextCommand('/action', 'LedCommand'),   new LedController())
