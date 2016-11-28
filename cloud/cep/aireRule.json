@@ -1,0 +1,7 @@
+{
+  "id": "aireRule",
+  "version": 2,
+  "input": ["metrics"],
+  "output": { "outputStream": "actions" },
+  "executionPlan": "from metrics#window.timeBatch(5 min) select avg(temperatura) as avgTemperatura insert into avgMetrics; from avgMetrics [avgTemperatura > 22] select 'ON' as STATE, 'aire' as DEV, 'B' as SENSOR insert into outputStream; from avgMetrics [avgTemperatura < 22] select 'OFF' as STATE, 'aire' as DEV, 'B' as SENSOR insert into outputStream; from avgMetrics [avgTemperatura < 19] select 'ON' as STATE, 'aire' as DEV, 'R' as SENSOR insert into outputStream; from avgMetrics [avgTemperatura > 19] select 'OFF' as STATE, 'aire' as DEV, 'R' as SENSOR insert into outputStream;"
+}

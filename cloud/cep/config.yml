@@ -1,5 +1,5 @@
 rest_uri: http://localhost:8888
-state_file: /Users/andresgomezfrr/raspberry/state.json
+state_file: state.json
 sources:
   - name: kafka
     class: net.redborder.cep.sources.kafka.KafkaSource
